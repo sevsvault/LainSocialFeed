@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lain Social Feed</title>
+
+    <meta
+        name="description"
+        content="Lain Social Feed is a Discord integration for monitoring authorized social media accounts and delivering notifications when new public content is published."
+    >
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            min-height: 100%;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #080808;
+            color: #d8d8d8;
+            font-family: "Courier New", Courier, monospace;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px;
+        }
+
+        main {
+            width: 100%;
+            max-width: 680px;
+        }
+
+        .label {
+            color: #666;
+            font-size: 12px;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            margin: 0 0 18px;
+            color: #f2f2f2;
+            font-size: clamp(32px, 7vw, 56px);
+            font-weight: 400;
+            letter-spacing: -0.05em;
+        }
+
+        .description {
+            color: #999;
+            font-size: 15px;
+            line-height: 1.8;
+            max-width: 580px;
+            margin-bottom: 40px;
+        }
+
+        .status {
+            border-left: 1px solid #333;
+            padding-left: 18px;
+            margin-bottom: 42px;
+            color: #777;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        .status strong {
+            color: #bbb;
+            font-weight: 400;
+        }
+
+        nav {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        a {
+            color: #aaa;
+            text-decoration: none;
+            border-bottom: 1px solid #333;
+            padding-bottom: 3px;
+            transition:
+                color 0.15s ease,
+                border-color 0.15s ease;
+        }
+
+        a:hover {
+            color: #fff;
+            border-color: #fff;
+        }
+
+        footer {
+            margin-top: 64px;
+            color: #444;
+            font-size: 11px;
+            letter-spacing: 0.1em;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="label">SEV // SOCIAL FEED</div>
+
+        <h1>Lain Social Feed</h1>
+
+        <p class="description">
+            A Discord social-feed integration for authorized social media
+            accounts. Lain monitors connected accounts for newly published
+            public content and delivers notifications to configured Discord
+            channels.
+        </p>
+
+        <div class="status">
+            <strong>Supported integrations</strong><br>
+            TikTok · Instagram · Spotify · Twitch · X
+        </div>
+
+        <nav>
+            <a href="./privacy.html">Privacy Policy</a>
+            <a href="./terms.html">Terms of Service</a>
+        </nav>
+
+        <footer>
+            LAIN SOCIAL FEED // SEV
+        </footer>
+    </main>
+</body>
+</html>
